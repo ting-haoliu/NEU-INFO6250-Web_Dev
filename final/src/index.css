@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Define theme colors for easy reuse */
+  --primary-color: #646cff;
+  --secondary-color: #4a5568;
+  --background-color: white;
+  --text-color: black;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  border-color: var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}

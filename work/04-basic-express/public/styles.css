@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    width: 50%;
+}
+
+#chat-app {
+    display: grid;
+    grid-template-areas:
+        "users messages"
+        "outgoing outgoing"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    height: 100%;
+}
+
+.users {
+    grid-area: users;
+
+    margin: 1rem;
+
+    list-style-type: none;
+}
+
+.messages {
+    grid-area: messages;
+
+    margin: 1rem;
+    list-style-type: none;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sender-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-image {
+    width: 3rem;
+    height: auto;
+}
+
+.outgoing {
+    grid-area: outgoing;
+    justify-self: end;
+
+    padding: 1rem;
+}

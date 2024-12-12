@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: skyblue;
+    color: brown;
+}
+
+main {
+    flex: 1;
+}
+
+.header,
+.footer {
+    background-color: aquamarine;
+    line-height: 4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__logo {
+    width: 4rem;
+    height: auto;
+}

@@ -1,0 +1,16 @@
+.home {
+    width: fit-content;
+}
+
+.home__list {
+    margin: 2rem;
+    padding: 2rem;
+    border: 2px solid darkred;
+    border-radius: 1rem;
+
+    list-style-type: "\1F431";
+}
+
+.home__list--item {
+    padding: 1rem 0;
+}

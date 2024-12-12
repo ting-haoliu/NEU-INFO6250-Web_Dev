@@ -1,0 +1,50 @@
+.header,
+.header__banned,
+.header__not_login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: inherit;
+    min-width: 650px;
+    background-color: #131a22;
+    color: #FFFFFF;
+    padding: 0 1rem;
+}
+
+.header__banned {
+    background-color: #e53e3e;
+    color: white;
+    font-size: 1rem;
+}
+
+.header__not_login {
+    background-color: #718096;
+    color: #fbd38d;
+    font-style: italic;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    font-weight: bolder;
+}
+
+.button__login {
+    border-radius: 5px;
+}
+
+.button__products,
+.button__logout,
+.button__cart {
+    background-color: #232f3e;
+    color: white;
+}

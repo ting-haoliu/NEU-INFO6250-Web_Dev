@@ -1,0 +1,107 @@
+.cart__header {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1a202c;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #f7fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart .product {
+    display: grid;
+    grid-template-areas: "image info";
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1rem;
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 40rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart .product__image {
+    grid-area: image;
+}
+
+.cart .product__image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart .product .product__info {
+    grid-area: info;
+    display: grid;
+    grid-template-areas: "title  inventory  inventory delete"
+        "price quantity  subtotal delete";
+    grid-template-columns: 1fr 1fr 1fr min-content;
+    grid-template-rows: min-content 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart .product .product__info .product__title {
+    grid-area: title;
+    justify-self: start;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.cart .product .product__info .product__price,
+.cart .product .product__info .product__quantity,
+.cart .product .product__info .product__subtotal {
+    color: #4a5568;
+    font-size: 0.9rem;
+}
+
+.cart .product__delete {
+    grid-area: delete;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 0.5rem;
+    background-color: #e53e3e;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product__quantity input[type=number] {
+    width: 3rem;
+    text-align: center;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.check_out_button {
+    width: fit-content;
+    align-self: center;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    background-color: #3182ce;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}

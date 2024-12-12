@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #9f6b6b;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Login Page */
+.login,
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    background-color: white;
+    width: 30rem;
+
+    margin: 5rem auto;
+    padding: 3rem;
+}
+
+.data-word {
+    font-size: larger;
+}
+
+.login-form,
+.logout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-weight: bold;
+}
+
+.update-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#username,
+#newWord {
+    padding: 0.5rem;
+
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+}
+
+.login-form__button,
+.logout-form__button {
+    align-self: flex-end;
+
+    background-color: #007bff;
+    color: #fff;
+
+    width: 5rem;
+    padding: 0.4rem;
+
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.update-form__button {
+    background-color: #cd57bf;
+    color: #fff;
+
+    width: 5rem;
+    padding: 0.4rem;
+
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}

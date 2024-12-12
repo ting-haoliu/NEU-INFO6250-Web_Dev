@@ -1,0 +1,9 @@
+.error {
+    position: relative;
+    top: 60px;
+    background-color: #f8d7da;
+    color: red;
+    padding: 0.2rem;
+    width: inherit;
+    z-index: 999;
+}

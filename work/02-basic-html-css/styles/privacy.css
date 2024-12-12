@@ -1,0 +1,7 @@
+.policy__content::first-letter {
+    font-size: 150%;
+}
+
+.policy__content {
+    line-height: 1.6;
+}

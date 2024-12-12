@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: azure;
+}
+
+.header {
+    text-align: center;
+    align-content: center;
+    min-height: 5rem;
+
+    background-color: bisque;
+}
+
+.main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    align-content: center;
+    min-height: 5rem;
+
+    background-color: bisque;
+}

@@ -1,0 +1,22 @@
+.orders {
+    margin-left: 1em;
+    margin-right: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5em;
+    height: fit-content;
+    overflow-y: auto;
+}
+
+.order {
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 0.5em;
+}
+
+.order button {
+    margin: 0 0.1em;
+    border-radius: 5px;
+}

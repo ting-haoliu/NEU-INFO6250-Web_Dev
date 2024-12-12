@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #dec8c8;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Login Page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    background-color: white;
+    width: 30rem;
+
+    margin: 5rem auto;
+    padding: 3rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-weight: bold;
+}
+
+.login-form__input {
+    padding: 0.5rem;
+    width: 100%;
+
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+}
+
+#login-button {
+    align-self: flex-end;
+
+    background-color: #007bff;
+    color: #fff;
+
+    width: 100%;
+    padding: 0.5rem;
+
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}
+
+
+/* Content Page */
+.content-container {
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-areas:
+        "greeting-container greeting-container"
+        "users messages"
+        "outgoing outgoing";
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-rows: auto 1fr auto;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+}
+
+.greeting-container {
+    grid-area: greeting-container;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #007acc;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#logout-button {
+    padding: 0.5rem;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.users,
+.messages {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+.users {
+    grid-area: users;
+    list-style-type: none;
+    padding: 1rem;
+    overflow-y: auto;
+    height: 25vh;
+
+    border: 1px solid #e0e0e0;
+}
+
+.messages {
+    grid-area: messages;
+    list-style-type: none;
+    padding: 1rem;
+    overflow-y: auto;
+    height: 50vh;
+
+    border: 1px solid #e0e0e0;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sender-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.user-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+}
+
+.outgoing {
+    grid-area: outgoing;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+}
+
+.message-form {
+    display: flex;
+    gap: 1rem;
+}
+
+#to-send {
+    width: 100%;
+    height: 3rem;
+    resize: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#send-button {
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#send-button:hover {
+    background-color: #005fa3;
+}

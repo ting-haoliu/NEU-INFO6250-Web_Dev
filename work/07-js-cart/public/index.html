@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./demo.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">Cat Store</h1>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-list__item">
+                    <a class="navbar-list--link" href="/">Shop</a>
+                </li>
+                <li class="navbar-list__item">
+                    <button id="view-cart__button" class="navbar-list--button">View Cart</button>
+                </li>
+                <li class="navbar-list__item">
+                    <button id="hide-cart__button" class="navbar-list--button hidden">Hide Cart</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="product-container">
+            <ul class="product"></ul>
+        </div>
+        <div id="cart-container" class="hidden">
+            <ul class="cart"></ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-content">Copyright © 2024 Tinghao Liu</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin: 1rem 0;
+    padding: 1rem;
+
+    min-width: 50rem;
+    background-color: rgb(188, 205, 232);
+    text-align: center;
+}
+
+.game-title {
+    color: blue;
+}
+
+.game-container {
+    display: flex;
+}
+
+.words-list__container {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.words-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.5rem;
+
+    list-style-type: none;
+}
+
+.words-list__items {
+    padding: 0.1rem;
+
+    color: #0a0c0f;
+    border: 1px solid black;
+}
+
+.guessed-list__container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.guess-list {
+    list-style-position: inside;
+}
+
+.guess-form {
+    font-size: large;
+    font-weight: bold;
+}
+
+#guess {
+    padding: 0.4rem;
+
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.guess-form__button {
+    background-color: #cd57bf;
+    color: #fff;
+
+    width: 5rem;
+    padding: 0.4rem;
+
+    border: 1px solid #cd57bf;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.guess-result {
+    color: red;
+}
+
+.newGame-form__button {
+    background-color: #007bff;
+    color: #fff;
+
+    width: 50%;
+    padding: 0.4rem;
+
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.logout-form__button {
+    background-color: gray;
+    color: #fff;
+
+    width: 50%;
+    padding: 0.4rem;
+
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}

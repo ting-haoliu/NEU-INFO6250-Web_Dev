@@ -1,0 +1,35 @@
+.products,
+.products__not_login,
+.products__banned,
+.products__user,
+.products__admin {
+    margin-left: 1em;
+    margin-right: 0.5em;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5em;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.products:hover,
+.products__not_login:hover,
+.products__banned:hover,
+.products__user:hover,
+.products__admin:hover {
+    overflow-y: auto;
+}
+
+.products__empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.products__buttons button {
+    margin: 0 0.5em;
+    border-radius: 5px;
+}
